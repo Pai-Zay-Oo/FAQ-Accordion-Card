@@ -7,30 +7,100 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <title>Frontend Mentor | FAQ Accordion Card</title>
+  <link rel="stylesheet" href="style.css">
 
  
 </head>
 <body>
-  How many team members can I invite?
-  You can invite up to 2 additional users on the Free plan. There is no limit on 
-  team members for the Premium plan.
-
-  What is the maximum file upload size?
-  No more than 2GB. All files in your account must fit your allotted storage space.
-
-  How do I reset my password?
-  Click “Forgot password” from the login page or “Change password” from your profile page.
-  A reset link will be emailed to you.
-
-  Can I cancel my subscription?
-  Yes! Send us a message and we’ll process your request no questions asked.
-
-  Do you provide additional support?
-  Chat and email support is available 24/7. Phone lines are open during normal business hours.
-
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+  <div class="container">
+    <div class="svg">
+      <div class="woman">
+        <img src="./images/illustration-woman-online-desktop.svg" alt="" class="woman-img">
+        <div class="box">
+          <img src="./images/illustration-box-desktop.svg" alt="" class="box-img">
+        </div>
+      </div>
+      
+    </div>
+    <div class="para">
+      <div class="header">
+        <h3>FAQ</h3>
+      </div>
+      <div class="both">
+        <div class="question q1">
+          <h4>How many team members can I invite?</h4>
+          <img src="./images/icon-arrow-down.svg" alt="">
+        </div>
+        <div class="answer ans1">
+          <p>Two members</p>
+        </div>
+      </div>
+      <div class="both">
+        <div class="question q2">
+          <h4>What is the maximum file upload size?</h4>
+          <img src="./images/icon-arrow-down.svg" alt="">
+        </div>
+        <div class="answer ans2">
+          <p>No more than 2GB.All files in your account must fit.</p>
+        </div>
+      </div>
+      <div class="both">
+        <div class="question q3">
+          <h4>How do I reset my password?</h4>
+          <img src="./images/icon-arrow-down.svg" alt="">
+        </div>
+        <div class="answer ans3">
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.<br> Illum alias repellendus cupiditate.</p>
+        </div>
+      </div>
+      <div class="both">
+        <div class="question q4">
+          <h4>Can I cancel my subscripyion?</h4>
+          <img src="./images/icon-arrow-down.svg" alt="">
+        </div>
+        <div class="answer ans4">
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.<br> Illum alias repellendus cupiditate.</p>
+        </div>
+      </div>
+      <div class="both">
+        <div class="question q5">
+          <h4>Do you provide additional support?</h4>
+          <img src="./images/icon-arrow-down.svg" alt="">
+        </div>
+        <div class="answer ans5">
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.<br> Illum alias repellendus cupiditate.</p>
+        </div>
+      </div>
+    </div>
   </div>
+  <script>
+    let q1 = document.querySelector(".q1");
+    let ans1 = document.querySelector(".ans1");
+    let q2 = document.querySelector(".q2");
+    let ans2 = document.querySelector(".ans2");
+    let q3 = document.querySelector(".q3");
+    let ans3 = document.querySelector(".ans3");
+    let q4 = document.querySelector(".q4");
+    let ans4 = document.querySelector(".ans4");
+    let q5 = document.querySelector(".q5");
+    let ans5 = document.querySelector(".ans5");
+
+
+    q1.addEventListener('click',function(){
+      ans1.classList.toggle("answer");
+    });
+    q2.addEventListener('click',function(){
+      ans2.classList.toggle("answer");
+    });
+    q3.addEventListener('click',function(){
+      ans3.classList.toggle("answer");
+    });
+    q4.addEventListener('click',function(){
+      ans4.classList.toggle("answer");
+    });
+    q5.addEventListener('click',function(){
+      ans5.classList.toggle("answer");
+    });
+  </script>
 </body>
 </html>
