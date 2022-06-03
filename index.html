@@ -26,46 +26,46 @@
       <div class="header">
         <h3>FAQ</h3>
       </div>
-      <div class="both">
+      <div class="both b1">
         <div class="question q1">
           <h4>How many team members can I invite?</h4>
-          <img src="./images/icon-arrow-down.svg" alt="">
+          <img src="./images/icon-arrow-down.svg" alt="" class=" i1 rotate">
         </div>
         <div class="answer ans1">
           <p>Two members</p>
         </div>
       </div>
-      <div class="both">
+      <div class="both b2">
         <div class="question q2">
           <h4>What is the maximum file upload size?</h4>
-          <img src="./images/icon-arrow-down.svg" alt="">
+          <img src="./images/icon-arrow-down.svg" alt="" class="i2 rotate">
         </div>
         <div class="answer ans2">
           <p>No more than 2GB.All files in your account must fit.</p>
         </div>
       </div>
-      <div class="both">
+      <div class="both b3">
         <div class="question q3">
           <h4>How do I reset my password?</h4>
-          <img src="./images/icon-arrow-down.svg" alt="">
+          <img src="./images/icon-arrow-down.svg" alt="" class="i3 rotate">
         </div>
         <div class="answer ans3">
           <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.<br> Illum alias repellendus cupiditate.</p>
         </div>
       </div>
-      <div class="both">
+      <div class="both b4">
         <div class="question q4">
           <h4>Can I cancel my subscripyion?</h4>
-          <img src="./images/icon-arrow-down.svg" alt="">
+          <img src="./images/icon-arrow-down.svg" alt="" class="i4 rotate">
         </div>
         <div class="answer ans4">
           <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.<br> Illum alias repellendus cupiditate.</p>
         </div>
       </div>
-      <div class="both">
+      <div class="both b5">
         <div class="question q5">
           <h4>Do you provide additional support?</h4>
-          <img src="./images/icon-arrow-down.svg" alt="">
+          <img src="./images/icon-arrow-down.svg" alt="" class="i5 rotate">
         </div>
         <div class="answer ans5">
           <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.<br> Illum alias repellendus cupiditate.</p>
@@ -73,6 +73,7 @@
       </div>
     </div>
   </div>
+  <script src="./js/jquery.min.js"></script>
   <script>
     let q1 = document.querySelector(".q1");
     let ans1 = document.querySelector(".ans1");
@@ -100,6 +101,22 @@
     });
     q5.addEventListener('click',function(){
       ans5.classList.toggle("answer");
+    });
+    $(".b1").click(function(){
+      $(".i1").toggleClass("rotate")
+    });
+    $(".b2").click(function(){
+      $(".i2").toggleClass("rotate")
+    });
+   
+    $(".b3").click(function(){
+      $(".i3").toggleClass("rotate")
+    });
+    $(".b4").click(function(){
+      $(".i4").toggleClass("rotate")
+    });
+    $(".b5").click(function(){
+      $(".i5").toggleClass("rotate")
     });
   </script>
 </body>

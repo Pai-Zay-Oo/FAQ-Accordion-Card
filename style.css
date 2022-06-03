@@ -32,10 +32,7 @@ body{
     display: flex;
     
 }
-.svg{
-   
-    
-}
+
 .woman{
     width: 80%;
     margin:70px 0;
@@ -93,8 +90,33 @@ body{
     width: 10px;
     height: 10px;
 }
-.question img:active{
+.rotate{
     transform: rotate(180deg);
+    
+}
+/* For Repomsive*/
+@media screen and (max-width:480px){
+    .container{
+        flex-wrap: wrap;
+        width: 90%;
+        height: 550px;
+    }
+    .woman{
+        
+        width: 80%;
+        top: -168px;
+        right: -39px;
+    }
+    .svg{
+        height: 52px;
+    }
+    
+    .box{
+        width: 150px;
+    }
+    .para{
+        width: 90%;
+    }
     
 }
 
